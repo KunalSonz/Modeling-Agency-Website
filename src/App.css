@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -34,5 +34,340 @@
   }
   to {
     transform: rotate(360deg);
+  }
+} */
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* .Navbar {
+  color: white;
+  width: 100%;
+  height: 40vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+} */
+
+.navMenu {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  display: none;
+  position: absolute;
+}
+
+.navArrow {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  cursor: pointer;
+}
+
+#left {
+  display: none;
+}
+
+#right,
+#left {
+  position: relative;
+  font-size: 40px;
+  padding-top: 10px;
+}
+
+#NavbarT li {
+  text-decoration: none;
+  list-style: none;
+  line-height: 50px;
+  color: white;
+}
+
+.home {
+  background-image: url(images/homebg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  color: white;
+}
+
+.homeData {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 50px;
+}
+
+.homeData h1 {
+  font-size: 40px;
+}
+.homeData h5 {
+  font-size: 13px;
+}
+.homeData h3 {
+  font-size: 25px;
+  border: 3px solid white;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.616);
+  cursor: pointer;
+}
+
+.aboutUs {
+  width: 100%;
+  height: auto;
+  background-image: url(images/fold2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.aboutUsp {
+  padding: 20px 20px 20px 20px;
+}
+
+.navMenu2 {
+  background-color: #e5e5e5c9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  display: none;
+  position: absolute;
+}
+
+.navArrow2 {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  cursor: pointer;
+}
+
+#left2 {
+  display: none;
+}
+
+#right2,
+#left2 {
+  position: relative;
+  font-size: 40px;
+  padding-top: 10px;
+}
+
+#Navbar2T li {
+  text-decoration: none;
+  list-style: none;
+  line-height: 50px;
+  color: black;
+}
+
+.services {
+  background-color: black;
+  width: 100%;
+  height: auto;
+  color: white;
+}
+
+.sectionTopic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+.serviceInfo {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.serviceImg {
+  width: 100%;
+  height: 30vh;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.serviceCard {
+  margin: 0px 10px 10px 10px;
+  height: auto;
+  border: solid 2px darkgrey;
+  padding: 10px;
+  cursor: pointer;
+  color: gray;
+}
+
+.serviceCard:hover {
+  border: solid 3px white;
+  color: white;
+}
+
+.serviceImg img,
+.modelImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.cardData h3,
+.cardData p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.models {
+  background-color: #e5e5e5;
+  width: 100%;
+  height: auto;
+}
+
+.modelCard {
+  margin: 0px 10px 10px 10px;
+  height: auto;
+  border: solid 2px darkgrey;
+  padding: 10px;
+  cursor: pointer;
+  color: gray;
+}
+
+.modelImg {
+  width: 100%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.modelImg h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactUs {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  color: white;
+}
+
+.contactData {
+  width: 100%;
+  height: auto;
+}
+
+.contactInfo {
+  padding: 20px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 425px) {
+  .serviceCard {
+    margin: 0px 20px 20px 20px;
+  }
+
+  .serviceImg {
+    height: 40vh;
+  }
+
+  .modelCard {
+    margin: 0px 30px 30px 30px;
+  }
+
+  .modelImg {
+    height: 60vh;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .homeData h1 {
+    font-size: 50px;
+  }
+  .homeData h5 {
+    font-size: 17px;
+  }
+
+  .serviceInfo {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .modelInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contactData {
+    padding-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #right,
+  #left {
+    position: relative;
+    font-size: 40px;
+    padding-top: 30px;
+  }
+
+  .homeData {
+    height: 80vh;
+  }
+
+  #right2,
+  #left2 {
+    position: relative;
+    font-size: 40px;
+    padding-top: 30px;
+  }
+
+  .aboutUs {
+    height: 100vh;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .homeData h1 {
+    font-size: 70px;
+  }
+  .homeData h5 {
+    font-size: 25px;
+  }
+
+  .homeData {
+    line-height: 80px;
+  }
+
+  #right,
+  #left {
+    position: relative;
+    font-size: 50px;
+    padding-top: 30px;
+  }
+
+  #right2,
+  #left2 {
+    position: relative;
+    font-size: 50px;
+    padding-top: 30px;
+  }
+
+  .aboutUsp {
+    font-size: 23px;
+  }
+
+  .sectionTopic h1 {
+    font-size: 40px;
+  }
+
+  .modelInfo {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
